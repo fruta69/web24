@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+
+.background {
+    background-image: url(../img/background.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+.etiqueta {
+    font-size: 20px;
+    color:brown;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.atributo {
+    font-size: 20px;
+    color:coral;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#enlaces a {
+    color:chocolate;
+    text-decoration: underline;
+}
+
+#listas .customdes li {
+    list-style-type: square;
+}
+
+#listas .customdes li li {
+    list-style-type: circle;
+}
+
+#listas .customdes li li li{
+    list-style-type: disc;
+}
+
+#listas .customord li {
+    list-style-type:armenian ;
+}
+
+#listas .customord li li {
+    list-style-type:decimal ;
+}
+
+#listas .customord li li li {
+    list-style-type:decimal-leading-zero ;
+}
+
+#listas .customicondes li li {
+    list-style-image: url(../img/icono.png);
+}
+
+#listas .customicondes li li li {
+    list-style-image: none;
+    list-style-type: circle;
+}
+
+#listas .listadefcustom {
+    width: 30%;
+}
+
+#listas .listadefcustom dt {
+    background-color: gray;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+}
+
+.striped tr:nth-child(odd) {
+    background-color: aquamarine;
+}
+.striped tr:nth-child(even) {
+    background-color:darkseagreen;
+}
+
+.horario {
+margin-left: auto;
+margin-right: auto;
+}
+.horario th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d827f;
+    text-align: center;
+}
+
+.s1dam {
+font-style: italic;
+}
+.horario td {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    width:130px;
+}
+
+.prog {
+    background-color: #64b4ef;
+}
+
+.bdd {
+    background-color: #81ff81;
+}
+
+.sisi {
+    background-color:#65aa97;
+}
+
+.lmsg {
+    background-color:#d1d46b;
+}
+
+.ipe {
+    background-color: #fe8081;
+}
+
+.ipcg {
+    background-color: #ffa264;
+}
+
+.pimd {
+    background-color: #ffc697;
+}
+
+.ende {
+    background-color: #c9a0c8;
+}
+
+.sasp {
+    background-color: #28c8c8;
+}
+
+.dasp {
+    background-color: #ffff63;
+}
+
+.formlogin {
+    width: 40%;
+    float: left;
+}
+.formregister {
+    width: 50%;
+    float: right;
+}
+
+.formhtml5 {
+    margin: 0 auto;
+    width: 30%;
+    background-color:cornsilk;
+}
+
+.formhtml5 legend {
+    background-color: rgb(116, 0, 0);
+    font-size: 22px;
+    color: white;
+}
+
+.cb {
+    clear: both;
+}
+
+#sublogin {
+    border-radius: 12px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: darkblue;
+}
+
+.tagshtml5h {
+ text-align: center;
+ border-color: rgb(192, 192, 192);
+ border-width: 2px;
+}
+
+.formhtml5 label {
+    background-color: rgb(255, 63, 63);
+    color: white;
+}
+
+.btn {
+    border: 0;
+    padding: 4px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.btn-red {
+    background-color: rgb(109, 0, 0);
+    color: white;
+}
+
+.btn-green {
+    background-color: rgb(23, 80, 0);
+    color: white;
+}
+
+.btn-blue {
+    background-color: rgb(1, 0, 80);
+    color: white;
+}
+
+.col3 {
+    width: 33.3%;
+    float: left;
+}
+
+.col3 img {
+    padding: 10px;
+}
+
+.video {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.audio {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}

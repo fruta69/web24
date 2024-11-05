@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="listas" class="py-3">
+                    <h2 class="text-center">listas</h2>
+                    <br><br>
+                    <h2>listas ordenadas</h2>
+                    <p>se hacen con <span class="etiqueta">ol</span> e <span class="etiqueta">il</span></p>
+                    <ol>
+                        <li>introduccion</li>
+                        <li>capitulo 1</li>
+                        <li>capitulo 2</li>
+                    </ol>
+                    <h2>listas desordenadas</h2>
+                    <p>se hacen con <span class="etiqueta">ul</span> e <span class="etiqueta">il</span></p>
+                    <ul>
+                        <li>pollos</li>
+                        <li>huevos</li>
+                        <li>pan</li>
+                    </ul>
+                    <h2>listas ordenadas con subniveles</h2>
+                    <ol>
+                        <li>introducción</li>
+                        <ol>
+                            <li>índice</li>
+                            <li>autor</li>
+                        </ol>
+                        <li>capítulo 1
+                            <ol>
+                                <li>empecé</li>
+                                <li>terminé</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h2>listas desordenadas con subniveles customizada</h2>
+                    <ul class="customdes">
+                        <li> hola
+                            <ul> 
+                                <li> hola
+                                    <ul>
+                                        <li>hola</li>
+                                        <li>hola</li>
+                                    </ul>
+                                </li>
+                                <li>hola
+                                    <ul>
+                                        <li>hola</li>
+                                        <li>hola</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>listas ordenadas con subniveles customizada</h2>
+                    <ol class="customord">
+                        <li> hola
+                            <ol>
+                                <li>hola
+                                    <ol>
+                                        <li>hola</li>
+                                        <li>hola</li>
+                                    </ol>
+                                </li>
+                                <li>hola
+                                    <ol>
+                                        <li>hola</li>
+                                        <li>hola</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h2>listas desordenada con subniveles customizada con imágenes</h2>
+                    <ul class="customicondes">
+                        <li> file
+                            <ul>
+                                <li>preferencias
+                                    <ul>
+                                        <li>perfil</li>
+                                        <li>ajustes</li>
+                                    </ul>
+                                </li>
+                                <li>open recent
+                                    <ul>
+                                        <li>more</li>
+                                        <li>clear</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>listas de definición</h2>
+                    <dl class="listadefcustom">
+                        <dt>óptica</dt>
+                        <dd>gafas</dd>
+                        <dt>tiburón</dt>
+                        <dd>pez</dd>
+                    </dl>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; noel</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
