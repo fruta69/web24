@@ -564,14 +564,13 @@ ul select option {
 }
 
 
-/* Cambiar el color del texto de los select */
 select {
-    color: black; /* Cambia a cualquier color que prefieras */
-    background-color: white; /* Ajusta el fondo si es necesario */
+    color: black;
+    background-color: white;
 }
 
-/* Cambiar el color de las opciones individuales */
+
 select option {
-    color: black; /* Color del texto en las opciones */
-    background-color: white; /* Fondo de cada opción */
+    color: black;
+    background-color: white;
 }
